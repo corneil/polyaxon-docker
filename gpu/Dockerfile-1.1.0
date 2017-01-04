@@ -1,0 +1,8 @@
+FROM polyaxon/base
+
+MAINTAINER mourad mourafiq <mouradmourafiq@gmail.com>
+
+ENV TENSORFLOW_VERSION 1.1.0
+
+# Install TensorFlow CPU version from central repo
+RUN pip3 --no-cache-dir install tensorflow-gpu==${TENSORFLOW_VERSION}
